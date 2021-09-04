@@ -24,16 +24,16 @@ def posicion(letra,key,tipo):
 
 try:
   tipo=input("Cifrado Cesar:\n\t(C) Codificar\n\t(D) Decodificar\nOpcion: ")
-  text = input("\nIngresa el mensage: ").lower()
+  text = input("\nIngresa el mensaje: ").lower()
   key = int(input("Clave(Numero Entero): "))
-
-  tam=len(text)
-  ntext = ""
-
-  for i in range(tam):
-    ntext += posicion(text[i],key,tipo)
-
-  print(f"\nMensage: {ntext}")
+  if tipo == "C" or tipo == "D":
+    tam=len(text)
+    ntext = ""
+    for i in range(tam):
+        ntext += posicion(text[i],key,tipo)
+    print(f"\nMensaje: {ntext}")
+  else:
+    print("\nOpción erronea!")
 
 except:
-  print("Error en datos!")
+  print("\nError en datos!")

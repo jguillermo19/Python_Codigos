@@ -6,7 +6,6 @@ def formword(fw,tam):
     nword+=fw[nt]+" "
   print("\n"+nword)
 
-
 def hangman(num):
   if num==6:
     print("""
@@ -78,7 +77,6 @@ def hangman(num):
      |      / \\
      |
  ____|___""")
-
 
 # Palabras a adivinar
 words=["cuatro", "estado", "cuenta", "pasado", "entrar", 
